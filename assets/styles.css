@@ -3,6 +3,41 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');    
 @import url('https://fonts.googleapis.com/css2?family=Armata&display=swap');
 
+
+:root{
+
+  --color1: #3c63ae;
+  --color2: #a8cd38;
+  --color3: #99643c;
+  --primary: var(--color1);
+
+
+}
+
+
+.color1{
+  background-color: var(--color1);
+}
+#color2{
+  background-color: var(--color2);
+}
+#color3{
+  background-color: var(--color3);
+}
+
+.text-color-1{
+  color: var(--color1);
+}
+
+.text-color-2{
+  color: var(--color2);
+}
+
+.text-color-3{
+  color: var(--color3);
+}
+
+
 h1 {
     font-family: Armata;
     margin: 0 0 5%;
@@ -22,11 +57,23 @@ h2 {
   font-size: 0.7rem;
   color: #2e4e88;
   background-color: rgba(0, 123, 255, 0.25);
+  margin-left: 2px;
+
 }
 
 .m-tambor {
   font-size: 0.7rem;
   background-color: rgba(0, 255, 17, 0.25);
+  margin-left: 2px;
+
+
+}
+
+.m-acessorios {
+  font-size: 0.7rem;
+  color: rgb(124, 78, 3);
+  background-color: rgba(255, 157, 0, 0.25);
+  margin-left: 2px;
 
 }
 
@@ -37,20 +84,23 @@ HERO
   display: flex;
   align-items: center;
   height: 90dvh;
-  background-image: url(img/hero/pexels-scott-webb-1544944.jpg);
+  background-image: url(img/hero/exemplo1.jpg);
   background-size: cover;
 
   background-attachment: fixed;
-  background-position: center;
+  background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .bgHero {
-  background-color: rgb(255, 255, 255, 0.9);
-  mix-blend-mode: normal;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
   border-radius: 10px;
-  color: var(--accent-contrast);
+  border: 1px solid rgba( 255, 255, 255, 0.1 );
+  color: #fff;
 }
 
 
@@ -66,3 +116,195 @@ HERO
 /*--------
 NAV
 */
+.navbar{
+  color: black;
+}
+
+.navbar a {
+  color: var(--color1) !important;
+}
+
+.navbar a:hover {
+  color: var(--color2) !important;
+}
+
+  /* Add the 'active' class to highlight active links in the navbar */
+  .navbar-nav li.nav-item.active {
+    background-color: var(--active-link-background-color); /* Define the color for active links */
+    /* Add any additional styling for active links */
+  }
+
+  /* Add responsive styling for the navbar */
+  @media (max-width: 991px) {
+    .navbar-nav {
+      background-color: var(--color1);
+    }
+
+    .navbar-nav li.nav-item.active {
+      background-color: var(--color2);
+    }
+  }
+
+
+.fb {
+
+  --b: 3px;   /* thickness of the border */
+  --c: rgb(0, 0, 0, 0.1);   /* color of the border */
+  --w: 25px;  /* width of border */
+  
+
+  border: var(--b) solid #0000; /* space for the border */
+  --_g: #0000 90deg,var(--c) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+  background:
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
+    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
+    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+  
+}
+
+
+.fb-2 {
+
+  --b: 8px;   /* thickness of the border */
+  --c: #fff;   /* color of the border */
+  --w: 35px;  /* width of border */
+  
+
+  border: var(--b) solid #0000; /* space for the border */
+  --_g: #0000 90deg,var(--c) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+  background:
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
+    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
+    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+  
+}
+
+
+.fb-3 {
+
+  --b: 3px;   /* thickness of the border */
+  --c: #a8cd38;   /* color of the border */
+  --w: 25px;  /* width of border */
+  
+  margin-left: -15px;
+  padding-left: 5px;
+  border: var(--b) solid #0000; /* space for the border */
+  --_g: #0000 90deg,var(--c) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+  background:
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p);
+  
+}
+
+
+.fb-4 {
+
+  --b: 3px;   /* thickness of the border */
+  --c: rgba(247, 245, 245, 0.3);   /* color of the border */
+  --w: 25px;  /* width of border */
+  
+  margin-left: -15px;
+  padding-left: 5px;
+  border: var(--b) solid #0000; /* space for the border */
+  --_g: #0000 90deg,var(--c) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+  background:
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p);
+  
+}
+
+
+.produto{
+  position: relative;
+  height: 50vh;
+  background-color: var(--color3);
+}
+
+.image_produto{
+  opacity: 0.3;
+  position: absolute;
+  display: flex;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  height: 50vh;
+}
+.middle {
+  transition: .2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  
+}
+
+
+.produto:hover .image_produto {
+  opacity: 0.1;
+
+
+}
+
+.produto:hover .middle {
+  color: antiquewhite;
+  opacity: 1;
+}
+
+
+.bg-clientes{
+  background: linear-gradient(90deg, var(--color1) 70%, #fff 70%);
+}
+
+
+/*
+BOTÕES
+*/
+
+
+/* Oulined  button*/
+
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+  border-width: 1px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+/* custom-styles.css */
+
+/* Define your custom primary color */
+.btn-primary {
+  color: #fff;
+  background-color: #3c63ae; /* Replace this with your desired color */
+  border-color: #3c63ae; /* Replace this with your desired color */
+}
+
+
+.btn-primary:hover{
+  background-color: #fff; /* You can define a different color for hover state if desired */
+  color: #3c63ae;
+
+
+}
+.btn-primary:focus {
+  background-color: #fff; /* Replace this with your desired hover color */
+  border-color: #3c63ae; /* Replace this with your desired hover color */
+  color: #3c63ae;
+
+}
+
+table .border-bottom{
+  border-bottom: 1px solid #cb7f04 !important;
+}
+.card-footer{
+  border: 0px #fff;
+}
+.modal-header,
+.modal-footer {
+  border: 0px #fff;
+
+}

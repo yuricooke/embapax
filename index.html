@@ -14,6 +14,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- CSS theme styles -->
+  
   <link rel="stylesheet" type="text/css" href="assets/styles.css">
   <!-- google icons -->
   <link rel="stylesheet"
@@ -23,21 +24,21 @@
 <body>
   <header id="top">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#top"><img src="assets/img/hero/logo.png"
-            class="img-fluid  w-25"></a>
+        <a class="navbar-brand js-scroll-trigger " href="#top"><img src="assets/img/hero/logo.png" class="img-fluid"
+            style="height: 40px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
           aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="ti-menu text-primary"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto text-uppercase">
+        <div class="collapse navbar-collapse " id="navbarResponsive">
+          <ul class="navbar-nav ml-auto text-uppercase text-dark">
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#top">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#quemsomos">Quem somos</a>
+              <a class="nav-link js-scroll-trigger" href="#introducao">Quem somos</a>
             </li>
 
             <li class="nav-item">
@@ -45,9 +46,6 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#clientes">Clientes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#sobre">Sobre nós</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contato">Contato</a>
@@ -60,19 +58,22 @@
     <section id="hero" class="hero mycolor">
       <div class="container ">
         <div class="row justify-content-center align-items-center">
-          <div class="col-12 col-md-10 text-center bgHero p-5">
-            <!-- heading -->
-            <img src="assets/img/hero/logo.png" alt="Embapax logomarca" class="img-fluid  my-1">
-            <hr class="bg-dark mb-5" style="height: 2px;">
-            <h1 class="text-uppercase my-3 " data-aos="fade-right">
-              Seja Muito Bem-vindo!
-            </h1>
-            <h3 class="mb-3 " data-aos="fade-right">
-              <font style="color: #4c4b4b;">Temos o que você precisa para garantir a proteção do seu
-                produto! </font>
-            </h3>
-            <a class="js-scroll-trigger" href="#services" data-aos="fade-up"><button
-                class="btn btn-lg btn-secondary text-white py-2 mt-3 px-4 btn-pill">Vamos lá!</button></a>
+          <div class="col-12 col-md-10 text-center fb-2 p-1">
+            <div class="bgHero p-3">
+
+              <!-- heading -->
+              <img src="assets/img/hero/logo_branco.png" alt="Embapax logomarca" class="img-fluid  my-1">
+              <hr class="bg-white mb-5" style="height: 2px;">
+              <h1 class="text-uppercase my-3 " data-aos="fade-right">
+                Seja Muito Bem-vindo!
+              </h1>
+              <h3 class="mb-3 " data-aos="fade-right">Temos o que você precisa para garantir a proteção do seu
+                produto!
+              </h3>
+              <a class="js-scroll-trigger" href="#introducao" data-aos="fade-up"><button
+                  class="btn btn-lg btn-light  py-2 mt-3 px-4 btn-pill" aria-hidden="true"
+                  tabindex="-1">Vamos lá!</button></a>
+            </div>
           </div>
 
         </div>
@@ -80,13 +81,21 @@
     </section>
 
   </header>
+  <!--div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-4 py-1" id="color1"></div>
+      <div class="col-4 py-1" id="color2"></div>
+      <div class="col-4 py-1" id="color3"></div>
+    </div>
+  </div-->
   <main>
     <section id="introducao">
       <div class="container-fluid py-5">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-10">
-              <h1>Introdução</h1>
+              <h1 class="text-color-1 fb-3">Introdução</h1>
+
               <div class="row justify-content-center">
                 <div class="col-md-8">
                   <h2>Quem somos</h2>
@@ -120,146 +129,824 @@
                     Cursus vitae congue mauris rhoncus aenean.</p>
                 </div>
               </div>
+              <div class="row justify-content-center mt-5">
+                <div class="col-12">
+                  <h2>Nossa Certificação</h2>
+                  <p>Possuímos o certificado de qualidade iso 9001-2015, buscando atender à satisfação plena dos clientes, parceiros e
+                    fornecedores.</p>
+                </div>
+                <div class="col-md-3 p-5">
+                  <img src="assets/img/intro/iso9001.png" class="img-fluid" alt="ISO 9001">
+                </div>
+              </div>
+              <!--div class="row justify-content-center mt-5">
+                <div class="col-12">
+                  <p>A seguir apresentamos as divisões que oferecemos:
+                  </p>
+                </div>
+              </div-->
             </div>
-            <div class="w-100"></div>
-            <div class="col-md-2 p-5">
-              <img src="assets/img/intro/iso9001.png" class="img-fluid" alt="ISO 9001">
-            </div>
+
+            <!--div class="col-md-10">
+              <div class="fb shadow p-5">
+                <h1>Título</h1>
+                <h3>Categora</h3>
+                <p>O texto descritio do produto deve vir aqui</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#prod-cant-01">
+                  Ficha técnica
+                </button>
+              </div>
+            </div-->
           </div>
         </div>
       </div>
     </section>
 
     <section id="produtos">
-      <div class="container-fluid bg-light py-5">
+      <div class="container-fluid  shadow-lg py-5">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-10">
-              <h1>Produtos</h1>
+              <h1 class=" mb-3 text-color-1 fb-3">Nossos Produtos</h1>
               <p>Confira nossas cantoneiras e tambores que fornecem toda a proteção necessária para o transporte dos
-                seus produtos.</p>
+                seus produtos:</p>
             </div>
           </div>
         </div>
-        <div class="container mt-5">
+      </div>
+      <div class="container-fluid ">
+        <div class="row">
+          <div class="col-md-6 d-flex justify-content-center align-items-center produto">
+            <img src="assets/img/produto/produto_cantoneira.jpg" alt="Cantoneiras" class="image_produto img-fluid"
+              style="width:100%">
+            <div class="middle" style="margin-left: 5%;">
+              <h2>Cantoneiras</h2>
+              <ul>
+                <li>Papéis multifoliados</li>
+                <li>Adesivos aquosos livres de solventes orgânicos</li>
+                <li>Tintas atóxicas isentas de metais pesados</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center align-items-center produto">
+            <img src="assets/img/produto/produto_tambor.jpg" alt="Cantoneiras" class="image_produto img-fluid"
+              style="width:100%">
+            <div class="middle">
+              <h2>Tambores</h2>
+              <ul>
+                <li>Resistência e durabilidade</li>
+                <li>Impermeabilidade</li>
+                <li>Restreabilidade</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid  py-5">
+        <div class="container">
           <div class="row justify-content-center">
-            <div class="col-md-10">
-              <div id="buttons" class="mb-3 d-flex justify-content-center align-items-center">
-                <button class="btn btn-outline-secondary rounded-pill  mx-3" data-filter="all"
-                  onclick="filterCards('all')">Todos</button>
-                <button class="btn btn-secondary rounded-pill mx-3" data-filter="A"
+            <div class="col-md-10 my-3">
+              <figcaption class="text-center">Categorias:</figcaption>
+              <div id="buttons" class=" d-flex justify-content-center align-items-center">
+                <button class="btn btn-outline-primary rounded-pill m-md-3" data-filter="all"
+                  onclick="filterCards('all')" autofocus>Todos</button>
+                <button class="btn btn-primary rounded-pill m-md-3" data-filter="A"
                   onclick="filterCards('A')">Cantoneiras</button>
-                <button class="btn btn-secondary rounded-pill mx-3" data-filter="B"
+                <button class="btn btn-primary rounded-pill m-md-3" data-filter="B"
                   onclick="filterCards('B')">Tambores</button>
+                  <button class="btn btn-primary rounded-pill m-md-3" data-filter="C"
+                  onclick="filterCards('C')">Acessórios</button>
               </div>
-              <div id="cards" class="row">
+              <div id="cards" class="row mt-5">
                 <div class="col-lg-3 col-md-6 mb-4" data-category="A">
-                  <div class="card">
-                    <div class="card-body">
-                      <img src="https://placehold.co/600x400" class="img-fluid" alt="Cantoneira 90 coluna">
-                      <div class="my-2 d-flex justify-content-end"><span
-                          class="rounded p-1 m-cantoneira">Cantoneira</span></div>
-                      <h5 class="card-title">Cantoneira 90° - Coluna</h5>
+                  <div class="card fb">
+                    <div class="card-body shadow">
+                      <img src="assets/img/produto/cantoneira-1.jpg" class="img-fluid border-bottom alt="Cantoneira coluna">
+                      <div class="my-2 d-flex justify-content-end"><span class="rounded p-1 m-cantoneira">Cantoneira</span></div>
+                      <h5 class="card-title">Coluna</h5>
                       <p class="card-text">Proteção e consolidação de carga</p>
+                      
+                    </div>
+                    <div class="card-footer bg-white shadow">
+                      <div class="row mx-3 align-content-end">
+                        <button type="button" class="btn btn-secondary " data-bs-toggle="modal"
+                        data-bs-target="#prod-cant-01">
+                        detalhes
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4" data-category="A">
-                  <div class="card">
-                    <div class="card-body">
-                      <img src="https://placehold.co/600x400" class="img-fluid" alt="Cantoneira 90 coluna">
-                      <div class="my-2 d-flex justify-content-end"><span
-                          class="rounded p-1 m-cantoneira">Cantoneira</span></div>
-                      <h5 class="card-title">Cantoneira 90° - Toco</h5>
-                      <p class="card-text">Utilizada para cintar paletes</p>
+                <div class="modal fade" id="prod-cant-01" tabindex="-1" aria-labelledby="cantoneira-1"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title text-color-1" id="Cantoneira-1">Cantoneira | Coluna</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <img src="assets/img/modal/modal-cantoneira-1.jpg" alt="cantoneira coluna" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                              <div class="my-2 d-flex justify-content-start"><span class="rounded p-1 m-0 m-cantoneira">Cantoneira</span></div>
+                              <h5>Coluna</h5>
+                              <p>Proteção e resistência no empilhamento dos seus produtos.</p>
+                              <table class="my-3">
+                                <tbody class="pt-3">
+                                  <tr class="border-bottom">
+                                    <th class="w-50">Ângulo</th>
+                                    <td class="w-25">90°</td>
+                                  </tr>
+                                  <tr class="border-bottom">
+                                    <th>Abas</th>
+                                    <td>40mm a 100mm</td>
+                                  </tr>
+                                  <tr class="border-bottom"> 
+                                    <th>Expessura</th>
+                                    <td>02mm a 08mm</td>
+                                  </tr>
+                                  <tr class="border-bottom">
+                                    <th>Comprimento</th>
+                                    <td>60mm a 6mts</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p>Solicite um orçamento. <a data-bs-dismiss="modal" aria-label="Close" href="#contato">Clique aqui</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                      </div>
                     </div>
                   </div>
                 </div>
+
                 <div class="col-lg-3 col-md-6 mb-4" data-category="A">
-                  <div class="card">
-                    <div class="card-body">
-                      <img src="https://placehold.co/600x400" class="img-fluid" alt="Cantoneira 90 coluna">
-                      <div class="my-2 d-flex justify-content-end"><span
-                          class="rounded p-1 m-cantoneira">Cantoneira</span></div>
-                      <h5 class="card-title">Cantoneira 90° - Dentada</h5>
-                      <p class="card-text">Proteção de itens redondos e embalagens flexíveis</p>
+                  <div class="card fb">
+                    <div class="card-body d-flex flex-column shadow">
+                      <img src="assets/img/produto/cantoneira-2.jpg" class="img-fluid border-bottom" alt="Cantoneira Dentada">
+                      <div class="my-2 d-flex justify-content-end"><span class="rounded p-1 m-cantoneira">Cantoneira</span></div>
+                      <h5 class="card-title">Dentada</h5>
+                      <p class="card-text">Proteção de itens redondos e embalagens flexíveis
+
+                      </p>
+                    </div>
+                    <div class="card-footer bg-white shadow">
+                      <div class="row mx-3 align-content-end">
+                        <button type="button" class="btn btn-secondary " data-bs-toggle="modal"
+                        data-bs-target="#prod-cant-02">
+                        detalhes
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div class="modal fade" id="prod-cant-02" tabindex="-1" aria-labelledby="cantoneira-2"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title text-color-1" id="Cantoneira-2">Cantoneira | Dentada</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <img src="assets/img/modal/modal-cantoneira-2.jpg" alt="Cantoneira dentada" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                              <div class="my-2 d-flex justify-content-start"><span class="rounded p-1 m-0 m-cantoneira">Cantoneira</span></div>
+                              <h5>Cantoneira Dentada</h5>
+                              <p>Proteção de itens redondos e embalagens flexíveis</p>
+                              <table class="my-3">
+                                <tbody class="pt-3">
+                                  <tr class="border-bottom">
+                                    <th class="w-50">Ângulo</th>
+                                    <td class="w-25">90°</td>
+                                  </tr>
+                                  <tr class="border-bottom">
+                                    <th>Abas</th>
+                                    <td>40mm a 100mm</td>
+                                  </tr>
+                                  <tr class="border-bottom"> 
+                                    <th>Expessura</th>
+                                    <td>02mm a 08mm</td>
+                                  </tr>
+                                  <tr class="border-bottom">
+                                    <th>Comprimento</th>
+                                    <td>60mm a 6mts</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p>Solicite um orçamento. <a data-bs-dismiss="modal" aria-label="Close" href="#contato">Clique aqui</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
                 <div class="col-lg-3 col-md-6 mb-4" data-category="A">
-                  <div class="card">
-                    <div class="card-body">
-                      <img src="https://placehold.co/600x400" class="img-fluid" alt="Cantoneira 90 coluna">
+                  <div class="card fb">
+                    <div class="card-body d-flex flex-column shadow">
+                      <img src="assets/img/produto/cantoneira-3.jpg" class="img-fluid border-bottom" alt="Cantoneira toco">
                       <div class="my-2 d-flex justify-content-end"><span
                           class="rounded p-1 m-cantoneira">Cantoneira</span></div>
-                      <h5 class="card-title">Cantoneira 90° - Moldura</h5>
+                      <h5 class="card-title">Toco</h5>
+                      <p class="card-text">Utilizada para proteger os cantos</p>
+                    </div>
+                    <div class="card-footer bg-white shadow">
+                      <div class="row mx-3 align-content-end">
+                        <button type="button" class="btn btn-secondary " data-bs-toggle="modal"
+                        data-bs-target="#prod-cant-03">
+                        detalhes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="prod-cant-03" tabindex="-1" aria-labelledby="cantoneira-3"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title text-color-1" id="cantoneira-3">Cantoneira | Toco</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <img src="assets/img/modal/modal-cantoneira-3.jpg" alt="cantoneira toco" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                              <div class="my-2 d-flex justify-content-start"><span class="rounded p-1 m-0 m-cantoneira">Cantoneira</span></div>
+                              <h5>Toco</h5>
+                              <p>Proteção de cantos</p>
+                              <table class="my-3">
+                                <tbody class="pt-3">
+                                  <tr class="border-bottom">
+                                    <th class="w-50">Ângulo</th>
+                                    <td class="w-25">90°</td>
+                                  </tr>
+                                  <tr class="border-bottom">
+                                    <th>Abas</th>
+                                    <td>40mm a 100mm</td>
+                                  </tr>
+                                  <tr class="border-bottom"> 
+                                    <th>Expessura</th>
+                                    <td>02mm a 08mm</td>
+                                  </tr>
+                                  <tr class="border-bottom">
+                                    <th>Comprimento</th>
+                                    <td>60mm a 6mts</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p>Solicite um orçamento. <a data-bs-dismiss="modal" aria-label="Close" href="#contato">Clique aqui</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4" data-category="A">
+                  <div class="card fb">
+                    <div class="card-body shadow">
+                      <img src="assets/img/produto/cantoneira-4.jpg" class="img-fluid border-bottom" alt="Cantoneira Moldura">
+                      <div class="my-2 d-flex justify-content-end"><span class="rounded p-1 m-cantoneira">Cantoneira</span></div>
+                      <h5 class="card-title">Moldura</h5>
                       <p class="card-text">Estruturar paletes e proteger parte superior</p>
                     </div>
+                    <div class="card-footer bg-white shadow">
+                      <div class="row mx-3 align-content-end">
+                        <button type="button" class="btn btn-secondary " data-bs-toggle="modal"
+                        data-bs-target="#prod-cant-04">
+                        detalhes
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4" data-category="A">
-                  <div class="card">
-                    <div class="card-body">
-                      <img src="https://placehold.co/600x400" class="img-fluid" alt="Cantoneira 90 coluna">
+                <div class="modal fade" id="prod-cant-04" tabindex="-1" aria-labelledby="cantoneira-4"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title text-color-1" id="cantoneira-4">Cantoneira | Moldura</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <img src="assets/img/modal/modal-cantoneira-4.jpg" alt="Cantoneira Moldura" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                              <div class="my-2 d-flex justify-content-start"><span class="rounded p-1 m-0 m-cantoneira">Cantoneira</span></div>
+                              <h5>Moldura</h5>
+                              <p>Estruturar paletes e proteger parte superior</p>
+                              <table class="my-3">
+                                <tbody class="pt-3">
+                                  <tr class="border-bottom">
+                                    <th class="w-50">Ângulo</th>
+                                    <td class="w-25">90°</td>
+                                  </tr>
+                                  <tr class="border-bottom">
+                                    <th>Abas</th>
+                                    <td>40mm a 100mm</td>
+                                  </tr>
+                                  <tr class="border-bottom"> 
+                                    <th>Expessura</th>
+                                    <td>02mm a 08mm</td>
+                                  </tr>
+                                  <tr class="border-bottom">
+                                    <th>Comprimento</th>
+                                    <td>60mm a 6mts</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p>Solicite um orçamento. <a data-bs-dismiss="modal" aria-label="Close" href="#contato">Clique aqui</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4" data-category="C">
+                  <div class="card fb">
+                    <div class="card-body shadow">
+                      <img src="assets/img/produto/separadores.jpg" class="img-fluid border-bottom" alt="Separadores">
+                      <div class="my-2 d-flex justify-content-end"><span class="rounded p-1 m-cantoneira">Cantoneira</span><span class="rounded ml-1 p-1 m-acessorios">Acessórios</span></div>
+
                       <h5 class="card-title">Separadores</h5>
                       <p class="card-text">Separação de produtos</p>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4" data-category="B">
-                  <div class="card">
-                    <div class="card-body">
-                      <img src="https://placehold.co/600x400" class="img-fluid" alt="Tambores">
-                      <div class="my-2 d-flex justify-content-end"><span class="rounded p-1 m-tambor">Tambores</span>
+                    <div class="card-footer bg-white shadow">
+                      <div class="row mx-3 align-content-end">
+                        <button type="button" class="btn btn-secondary " data-bs-toggle="modal"
+                        data-bs-target="#prod-cant-05">
+                        detalhes
+                        </button>
                       </div>
-                      <h5 class="card-title">Tambor FG</h5>
-                      <p class="card-text">Tambores com fundo e boca recravada em aço galvanizado. Tampa removível com
-                        fecho americano e chaveta para lacre.</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4" data-category="B">
-                  <div class="card">
-                    <div class="card-body">
-                      <img src="https://placehold.co/600x400" class="img-fluid" alt="Tambores">
-                      <div class="my-2 d-flex justify-content-end"><span class="rounded p-1 m-tambor">Tambores</span>
+                <div class="modal fade" id="prod-cant-05" tabindex="-1" aria-labelledby="cantoneira-5"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title text-color-1" id="cantoneira-5">Separadores</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
-                      <h5 class="card-title">Tambor FM</h5>
-                      <p class="card-text">Tambores com fundo e boca recravada em aço galvanizado. Tampa removível com
-                        fecho americano e chaveta para lacre.Para Fios/ Arames/ Cabos</p>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <img src="assets/img/modal/modal-separadores.jpg" alt="separadores" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                              <div class="my-2 d-flex justify-content-start"><span class="rounded p-1 m-0 m-cantoneira">Cantoneira</span><span class="rounded ml-1 p-1 m-acessorios">Acessórios</span></div>
+                              <h5>Separadores</h5>
+                              <p>Lâminas de compensado para separar seus</p>
+                              <table class="my-3">
+                                <tbody class="pt-3">
+                                 
+                                  <tr class="border-bottom"> 
+                                    <th class="w-50">Expessura</th>
+                                    <td class="w-25">02mm a 04mm</td>
+                                  </tr>
+                                  <tr class="border-bottom">
+                                    <th>Largura</th>
+                                    <td>70mm a 100mm</td>
+                                  </tr>
+                                  <tr class="border-bottom">
+                                    <th>Comprimento</th>
+                                    <td>até 2,4mts</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p>Solicite um orçamento. <a data-bs-dismiss="modal" aria-label="Close" href="#contato">Clique aqui</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4" data-category="B">
-                  <div class="card">
-                    <div class="card-body">
-                      <img src="https://placehold.co/600x400" class="img-fluid" alt="Tambores">
-                      <div class="my-2 d-flex justify-content-end"><span class="rounded p-1 m-tambor">Tambores</span>
+
+                <div class="col-lg-3 col-md-6 mb-4" data-category="C">
+                  <div class="card fb">
+                    <div class="card-body shadow">
+                      <img src="assets/img/produto/caixa-palete.jpg" class="img-fluid border-bottom" alt="Caixa Palete">
+                      <div class="my-2 d-flex justify-content-end"><span class="rounded p-1 m-cantoneira">Cantoneira</span><span class="rounded ml-1 p-1 m-acessorios">Palete</span></div>
+
+                      <h5 class="card-title">Caixa Palete</h5>
+                      <p class="card-text">Ideal para subsitituir embalagens</p>
+                    </div>
+                    <div class="card-footer bg-white shadow">
+                      <div class="row mx-3 align-content-end">
+                        <button type="button" class="btn btn-secondary " data-bs-toggle="modal"
+                        data-bs-target="#prod-cant-palete">
+                        detalhes
+                        </button>
                       </div>
-                      <h5 class="card-title">Tambor CT</h5>
-                      <p class="card-text">Tambores com fundo recravado em aço galvanizado e tampa de encaixe</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4" data-category="B">
-                  <div class="card">
-                    <div class="card-body">
-                      <img src="https://placehold.co/600x400" class="img-fluid" alt="Tambores">
-                      <div class="my-2 d-flex justify-content-end"><span class="rounded p-1 m-tambor">Tambores</span>
+                <div class="modal fade" id="prod-cant-palete" tabindex="-1" aria-labelledby="cantoneira-palete"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title text-color-1" id="cantoneira-palete">Caixa Palete</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
-                      <h5 class="card-title">Tambor ST, II, AL, AA, AT, LL</h5>
-                      <p class="card-text">Tambores com fundo recravado em aço galvanizado e tampa de encaixe</p>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <img src="assets/img/modal/modal-caixa-palete.jpg" alt="Caixa Palete" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                              <div class="my-2 d-flex justify-content-start"><span class="rounded p-1 m-0 m-cantoneira">Cantoneira</span><span class="rounded ml-1 p-1 m-acessorios">Palete</span></div>
+                              <h5>Caixa Palete</h5>
+                              <p>Produzida em papel multifoliado. Ideal para subsitituir embalagens de madeira, papelao, plasticos, aluminio, aço,
+                                autopeças, móveis, eletro eletronico, químico farmaceutico e etc...</p>
+                              <ul>
+                                <li>Fácil de montar e não ocupa espaço em seu depósito.</li>
+                                <li>Tamanho adequável a qualquer produto.</li>
+                                <li>Resistentes e podem ser empilhadas e reutilizadas.</li>
+                              </ul>
+                              <p>Solicite um orçamento. <a data-bs-dismiss="modal" aria-label="Close" href="#contato">Clique aqui</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                      </div>
                     </div>
                   </div>
                 </div>
+
+
+
+
                 <div class="col-lg-3 col-md-6 mb-4" data-category="B">
-                  <div class="card">
-                    <div class="card-body">
-                      <img src="https://placehold.co/600x400" class="img-fluid" alt="Tambores">
+                  <div class="card fb">
+                    <div class="card-body shadow">
+                      <img src="assets/img/produto/tambor-1.jpg" class="img-fluid border-bottom" alt="Tambores">
                       <div class="my-2 d-flex justify-content-end"><span class="rounded p-1 m-tambor">Tambores</span>
+                      </div>
+                      <h5 class="card-title">Aço x Aço</h5>
+                      <p class="card-text">Fundo e boca em aço galvanizado</p>
+                    </div>
+                    <div class="card-footer bg-white shadow">
+                      <div class="row mx-3 align-content-end">
+                        <button type="button" class="btn btn-secondary " data-bs-toggle="modal"
+                        data-bs-target="#prod-cant-06">
+                        detalhes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="prod-cant-06" tabindex="-1" aria-labelledby="cantoneira-6"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title text-color-1" id="cantoneira-6">Tambor | Aço x Aço</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <img src="assets/img/modal/modal-tambor-1.jpg" alt="Cantoneira 1" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                              <div class="my-2 d-flex justify-content-start"><span class="rounded p-1 m-0 m-tambor">Tambores</span></div>
+                              <h5>Aço x Aço</h5>
+                              <p>Proteção para pequenos e grandes volumes.<br>Tambores com fundo e boca recravada em aço galvanizado. Tampa removível com
+                                fecho americano e chaveta para lacre.</p>
+                              <div class="row">
+                                  <img src="assets/img/modal/tecnico-tambor-1.jpg" alt="especificações técnicas" class="img-fluid">
+                              </div>
+                              
+                              <table class="my-3">
+                                <tbody class="pt-3">
+                                  <tr class="border-bottom"> 
+                                    <th class="w-50">Diâmentos(cm)</th>
+                                  </tr>
+                                  <tr class="border-bottom">
+                                    <td>16 | 22 | 25 | 28 | 32 | 37 | 40 | 45 | 51 | 53 | 57</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p>Solicite um orçamento. <a data-bs-dismiss="modal" aria-label="Close" href="#contato">Clique aqui</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-6 mb-4" data-category="B">
+                  <div class="card fb">
+                    <div class="card-body shadow">
+                      <img src="assets/img/produto/tambor-2.jpg" class="img-fluid border-bottom" alt="Tambores">
+                      <div class="my-2 d-flex justify-content-end"><span class="rounded p-1 m-tambor">Tambores</span>
+                      </div>
+                      <h5 class="card-title">Aço X Encaixe</h5>
+                      <p class="card-text">Fundo em aço e boca de encaixe</p>
+                    </div>
+                    <div class="card-footer bg-white shadow">
+                      <div class="row mx-3 align-content-end">
+                        <button type="button" class="btn btn-secondary " data-bs-toggle="modal"
+                        data-bs-target="#prod-cant-07">
+                        detalhes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="prod-cant-07" tabindex="-1" aria-labelledby="cantoneira-7"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title text-color-1" id="cantoneira-7">Tambor | Aço X Encaixe</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <img src="assets/img/modal/modal-tambor-2.jpg" alt="Tambor Aço Encaixe" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                              <div class="my-2 d-flex justify-content-start"><span class="rounded p-1 m-0 m-tambor">Tambores</span></div>
+                              <h5>Aço x Encaixe</h5>
+                              <p>Proteção para pequenos e grandes volumes. Tambores com fundo recravada em aço galvanizado e tampa de encaixe.</p>
+                              <div class="row">
+                                <img src="assets/img/modal/tecnico-tambor-2.jpg" alt="especificações técnicas" class="img-fluid">
+                            </div>
+                              <table class="my-3">
+                                <tbody class="pt-3">
+                                 
+                                  <tr class="border-bottom"> 
+                                    <th class="w-50">Diâmentos(cm)</th>
+                                    
+                                  </tr>
+                                  <tr class="border-bottom">
+                                    <td>16 | 22 | 25 | 28 | 32 | 37 | 40 | 45 | 51 | 53 | 57</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p>Solicite um orçamento. <a data-bs-dismiss="modal" aria-label="Close" href="#contato">Clique aqui</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4" data-category="B">
+                  <div class="card fb">
+                    <div class="card-body shadow">
+                      <img src="assets/img/produto/tambor-3.jpg" class="img-fluid border-bottom alt="tambores encaixe">
+                      <div class="my-2 d-flex justify-content-end"><span class="rounded p-1 m-tambor">Tambores</span>
+                      </div>
+                      <h5 class="card-title">Encaixe</h5>
+                      <p class="card-text">Tampa de encaixe e funco colado</p>
+                      
+                    </div>
+                    <div class="card-footer bg-white shadow">
+                      <div class="row mx-3 align-content-end">
+                        <button type="button" class="btn btn-secondary " data-bs-toggle="modal"
+                        data-bs-target="#prod-cant-08">
+                        detalhes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="prod-cant-08" tabindex="-1" aria-labelledby="cantoneira-8"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title text-color-1" id="cantoneira-8">Tambor | Encaixe</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <img src="assets/img/modal/modal-tambor-3.jpg" alt="Tambor Encaixe" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                              <div class="my-2 d-flex justify-content-start"><span class="rounded p-1 m-0 m-tambor">Tambores</span></div>
+                              <h5>Encaixe</h5>
+                              <p>Proteção para pequenos e grandes volumes.</p>
+                              <div class="row">
+                                <img src="assets/img/modal/tecnico-tambor-3.jpg" alt="especificações técnicas" class="img-fluid">
+                            </div>
+                              <table class="my-3">
+                                <tbody class="pt-3">
+                                 
+                                  <tr class="border-bottom"> 
+                                    <th class="w-50">Diâmentos(cm)</th>
+                                    
+                                  </tr>
+                                  <tr class="border-bottom">
+                                    <td>16 | 22 | 25 | 28 | 32 | 37 | 40 | 45 | 51 | 53 | 57</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p>Solicite um orçamento. <a data-bs-dismiss="modal" aria-label="Close" href="#contato">Clique aqui</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+                <div class="col-lg-3 col-md-6 mb-4" data-category="B">
+                  <div class="card fb">
+                    <div class="card-body shadow">
+                      <img src="assets/img/produto/tambor-4.jpg" class="img-fluid border-bottom alt="Tambores Aço">
+                      <div class="my-2 d-flex justify-content-end"><span class="rounded p-1 m-tambor">Tambores</span>
+                      </div>
+                      <h5 class="card-title">Aço para Fios</h5>
+                      <p class="card-text">Fundo e boca em aço galvanizado. Para fios, arames e cabos</p>
+                      
+                    </div>
+                    <div class="card-footer bg-white shadow">
+                      <div class="row mx-3 align-content-end">
+                        <button type="button" class="btn btn-secondary " data-bs-toggle="modal"
+                        data-bs-target="#prod-cant-09">
+                        detalhes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="prod-cant-09" tabindex="-1" aria-labelledby="cantoneira-8"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title text-color-1" id="cantoneira-8">Tambor | Aço para Fios</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <img src="assets/img/modal/modal-tambor-4.jpg" alt="Tambor Aço Fios" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                              <div class="my-2 d-flex justify-content-start"><span class="rounded p-1 m-0 m-tambor">Tambores</span></div>
+                              <h5>Encaixe</h5>
+                              <p>Proteção para pequenos e grandes volumes.<br>
+                              Para fios, arames e cabos.<br>
+                              Tambores com fundo e boca recravada em aço galvanizado. Tampa removível com
+                                fecho americano e chaveta para lacre.</p>
+                                <div class="row">
+                                  <img src="assets/img/modal/tecnico-tambor-1.jpg" alt="especificações técnicas" class="img-fluid">
+                              </div>
+                              <table class="my-3">
+                                <tbody class="pt-3">
+                                 
+                                  <tr class="border-bottom"> 
+                                    <th class="w-50">Diâmentos(cm)</th>
+                                    
+                                  </tr>
+                                  <tr class="border-bottom">
+                                    <td>16 | 22 | 25 | 28 | 32 | 37 | 40 | 45 | 51 | 53 | 57</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p>Solicite um orçamento. <a data-bs-dismiss="modal" aria-label="Close" href="#contato">Clique aqui</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+                <div class="col-lg-3 col-md-6 mb-4" data-category="C">
+                  <div class="card fb">
+                    <div class="card-body shadow">
+                      <img src="assets/img/produto/luvas.jpg" class="img-fluid border-bottom" alt="Tambores">
+                      <div class="my-2 d-flex justify-content-end"><span class="rounded p-1 m-tambor">Tambores</span><span class="rounded ml-1 p-1 m-acessorios">Acessórios</span>
                       </div>
                       <h5 class="card-title">Luvas e Espulas de papel</h5>
-                      <p class="card-text">Fabricadas para enrolar metal, aço ou alumínio, fios de metal/cobre.</p>
+                      <p class="card-text">Acessórios de proteção ao seu produto</p>
+                    </div>
+                    <div class="card-footer bg-white shadow">
+                      <div class="row mx-3 align-content-end">
+                        <button type="button" class="btn btn-secondary " data-bs-toggle="modal"
+                        data-bs-target="#prod-cant-10">
+                        detalhes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="prod-cant-10" tabindex="-1" aria-labelledby="cantoneira-10"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title text-color-1" id="cantoneira-10">Tambor | Aço para Fios</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <img src="assets/img/modal/modal-luvas.jpg" alt="Tambor Aço Fios" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                              <div class="my-2 d-flex justify-content-start"><span class="rounded p-1 m-0 m-tambor">Tambores</span><span class="rounded ml-1 p-1 m-acessorios">Acessórios</span></div>
+                              <h5>Luvas e Éspulas de papel</h5>
+                              <p>Acessórios de proteção ao seu produto</p>
+                              <table class="my-3">
+                                <tbody class="pt-3">
+                                 
+                                  <tr class="border-bottom"> 
+                                    <th class="w-50">Diâmentos(cm)</th>
+                                    
+                                  </tr>
+                                  <tr class="border-bottom">
+                                    <td>16 | 22 | 25 | 28 | 32 | 37 | 40 | 45 | 51 | 53 | 57</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <p>Solicite um orçamento. <a data-bs-dismiss="modal" aria-label="Close" href="#contato">Clique aqui</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -273,31 +960,51 @@
     </section>
 
     <section id="clientes">
-      <div class="container-fluid bg-dark text-light py-5">
-        <div class="container">
+      <div class="container-fluid color1 shadow-lg py-5">
+        <div class="container bg-light shadow py-5">
           <div class="row justify-content-center">
-            <div id="myCarousel" class="carousel slide py-5">
+            <div class="col-md-10 text-color-1">
+              <h1 class="fb-3" >Nossos Clientes</h1>
+            </div>
+            <div class="offset-md-2">
+            <div id="myCarousel" class="carousel carousel-dark bg-white slide py-5 shadow-lg">
               <div class="carousel-inner">
+
+              <p class="text-center">Fornecemos nossos produtos para uma vasta gama de empresas, desde as maiores marcas do mercado nacional até o ME.</p>
+
+
                 <div class="carousel-item active">
                   <div class="row justify-content-center">
                     <div class="col-md-3">
                       <div class="card-carousel">
                         <div class="card-body">
                           <div class="row d-flex justify-content-start pb-3">
-                            <div class="col-4">
-                              <img src="https://source.unsplash.com/random/200x200/?face&1"
-                                class="card-img-top user-mask" alt="Consumer Image 1">
+                            <div class="col-12">
+                              <img src="assets/img/logos/henkel.jpg"
+                                class="card-img-top user-mask" alt="Heinkel logomarca">
                             </div>
-                            <div class="col-6">
+                            <!--div class="col-6">
                               <h5 class="card-title mb-0">Yuri Cooke</h5>
                               <span class="location">Rio de Janeiro, BRA</span>
                               <div class="rating text-warning">
                                 <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
                               </div>
-                            </div>
+                            </div-->
                           </div>
-                          <div class="row pb-3">
+                          <!--div class="row pb-3">
                             <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                          </div-->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 d-none d-md-block">
+                      <div class="card-carousel">
+                        <div class="card-body">
+                          <div class="row d-flex justify-content-start pb-3">
+                            <div class="col-12">
+                              <img src="assets/img/logos/basf.jpg"
+                                class="card-img-top user-mask" alt="BASF logo">
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -306,42 +1013,10 @@
                       <div class="card-carousel">
                         <div class="card-body">
                           <div class="row d-flex justify-content-start pb-3">
-                            <div class="col-4">
-                              <img src="https://source.unsplash.com/random/200x200/?face&2"
-                                class="card-img-top user-mask" alt="Consumer Image 1">
+                            <div class="col-12">
+                              <img src="assets/img/logos/lincoln.jpg"
+                                class="card-img-top user-mask" alt="BASF logo">
                             </div>
-                            <div class="col-6">
-                              <h5 class="card-title mb-0">Chris Brown</h5>
-                              <span class="location">San Francisco, USA</span>
-                              <div class="rating text-warning">
-                                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row pb-3">
-                            <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 d-none d-md-block">
-                      <div class="card-carousel">
-                        <div class="card-body">
-                          <div class="row d-flex justify-content-start pb-3">
-                            <div class="col-4">
-                              <img src="https://source.unsplash.com/random/200x200/?face&3"
-                                class="card-img-top user-mask" alt="Consumer Image 1">
-                            </div>
-                            <div class="col-6">
-                              <h5 class="card-title mb-0">Dudu Cooke</h5>
-                              <span class="location">Barcelona, ESP</span>
-                              <div class="rating text-warning">
-                                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row pb-3">
-                            <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
                           </div>
                         </div>
                       </div>
@@ -354,20 +1029,32 @@
                       <div class="card-carousel">
                         <div class="card-body">
                           <div class="row d-flex justify-content-start pb-3">
-                            <div class="col-4">
-                              <img src="https://source.unsplash.com/random/200x200/?face&4"
-                                class="card-img-top user-mask" alt="Consumer Image 1">
+                            <div class="col-12">
+                              <img src="assets/img/logos/cba.jpg"
+                                class="card-img-top user-mask" alt="CBA logomarca">
                             </div>
-                            <div class="col-6">
-                              <h5 class="card-title mb-0">Canela Bean</h5>
-                              <span class="location">Paris, FRA</span>
+                            <!--div class="col-6">
+                              <h5 class="card-title mb-0">Yuri Cooke</h5>
+                              <span class="location">Rio de Janeiro, BRA</span>
                               <div class="rating text-warning">
                                 <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
                               </div>
-                            </div>
+                            </div-->
                           </div>
-                          <div class="row pb-3">
+                          <!--div class="row pb-3">
                             <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                          </div-->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 d-none d-md-block">
+                      <div class="card-carousel">
+                        <div class="card-body">
+                          <div class="row d-flex justify-content-start pb-3">
+                            <div class="col-12">
+                              <img src="assets/img/logos/usiminas.jpg"
+                                class="card-img-top user-mask" alt="Usiminas logo">
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -376,99 +1063,68 @@
                       <div class="card-carousel">
                         <div class="card-body">
                           <div class="row d-flex justify-content-start pb-3">
-                            <div class="col-4">
-                              <img src="https://source.unsplash.com/random/200x200/?face&5"
-                                class="card-img-top user-mask" alt="Consumer Image 1">
+                            <div class="col-12">
+                              <img src="assets/img/logos/cacau.jpg"
+                                class="card-img-top user-mask" alt="Cacau Show logo">
                             </div>
-                            <div class="col-6">
-                              <h5 class="card-title mb-0">Novinho</h5>
-                              <span class="location">Bangkok, THA</span>
-                              <div class="rating text-warning">
-                                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row pb-3">
-                            <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 d-none d-md-block">
-                      <div class="card-carousel">
-                        <div class="card-body">
-                          <div class="row d-flex justify-content-start pb-3">
-                            <div class="col-md-4">
-                              <img src="https://source.unsplash.com/random/200x200/?face&6"
-                                class="card-img-top user-mask" alt="Consumer Image 1">
-                            </div>
-                            <div class="col-md-6">
-                              <h5 class="card-title mb-0">Mama</h5>
-                              <span class="location">New York, USA</span>
-                              <div class="rating text-warning">
-                                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row pb-3">
-                            <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item ">
+                <div class="carousel-item">
                   <div class="row justify-content-center">
-                    <div class="col-md-3 d-none d-md-block">
-                      <div class="card-carousel">
-                        <div class="card-body">
-                          <div class="row d-flex justify-content-start pb-3">
-                            <div class="col-4">
-                              <img src="https://source.unsplash.com/random/200x200/?face&7"
-                                class="card-img-top user-mask" alt="Consumer Image 1">
-                            </div>
-                            <div class="col-6">
-                              <h5 class="card-title mb-0">Masako</h5>
-                              <span class="location">Tokyo, JPN</span>
-                              <div class="rating text-warning">
-                                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row pb-3">
-                            <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                     <div class="col-md-3">
                       <div class="card-carousel">
                         <div class="card-body">
                           <div class="row d-flex justify-content-start pb-3">
-                            <div class="col-4">
-                              <img src="https://source.unsplash.com/random/200x200/?face&8"
-                                class="card-img-top user-mask" alt="Consumer Image 1">
+                            <div class="col-12">
+                              <img src="assets/img/logos/arcelor.jpg"
+                                class="card-img-top user-mask" alt="Arcelor logomarca">
                             </div>
-                            <div class="col-6">
-                              <h5 class="card-title mb-0">Ethan</h5>
-                              <span class="location">Istambul, TUR</span>
+                            <!--div class="col-6">
+                              <h5 class="card-title mb-0">Yuri Cooke</h5>
+                              <span class="location">Rio de Janeiro, BRA</span>
                               <div class="rating text-warning">
                                 <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>
                               </div>
-                            </div>
+                            </div-->
                           </div>
-                          <div class="row pb-3">
+                          <!--div class="row pb-3">
                             <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                          </div-->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 d-none d-md-block">
+                      <div class="card-carousel">
+                        <div class="card-body">
+                          <div class="row d-flex justify-content-start pb-3">
+                            <div class="col-12">
+                              <img src="assets/img/logos/chiesi.jpg"
+                                class="card-img-top user-mask" alt="Chiesi logo">
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-
+                    <div class="col-md-3 d-none d-md-block">
+                      <div class="card-carousel">
+                        <div class="card-body">
+                          <div class="row d-flex justify-content-start pb-3">
+                            <div class="col-12">
+                              <img src="assets/img/logos/sabo.jpg"
+                                class="card-img-top user-mask" alt="SABO logo">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <button class="carousel-control-prev " type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
@@ -476,6 +1132,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
+            </div>
             </div>
           </div>
         </div>
@@ -488,21 +1145,25 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-10">
-              <h1>Contato</h1>
+              <h1 class="text-color-1 fb-3">Contato</h1>
               <p>Entre em contato com nosso time de atendimento para solicitar um orçamento!</p>
 
             </div>
             <div class="text-center">
-              <a href="mailto:yuricooke@email.com" target="_blank" class="btn btn-lg btn-dark py-2 px-4 mb-5 btn-pill">E-mail</a>
+              <a href="mailto:yuricooke@email.com" target="_blank"
+                class="btn btn-lg btn-secondary py-2 px-4 mb-5 btn-pill">E-mail</a>
               <a href="https://wa.me/5521997423956/?text=Hi!%20I'm%20looking%20for%20an%20amazing%20front-end%20developer."
-                class="btn btn-lg btn-dark py-2 px-4 mb-5 btn-pill">Whatsapp</a>
+                class="btn btn-lg btn-primary py-2 px-4 mb-5 btn-pill">Whatsapp</a>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4651.379177879801!2d-46.91826012378009!3d-23.456793778871823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0536948fdc3f%3A0x5484130c147b4d54!2sEmbapax!5e1!3m2!1spt-BR!2sbr!4v1690231187390!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4651.379177879801!2d-46.91826012378009!3d-23.456793778871823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0536948fdc3f%3A0x5484130c147b4d54!2sEmbapax!5e1!3m2!1spt-BR!2sbr!4v1690231187390!5m2!1spt-BR!2sbr"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
   <!-- Footer -->
@@ -560,7 +1221,9 @@
 
 
   <!--<script src="assets/js/themes.js"></script>-->
+  <script src="assets/nav.js"></script>
   <script src="assets/theme.js"></script>
+
 
 </body>
 
