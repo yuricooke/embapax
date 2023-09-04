@@ -14,6 +14,10 @@
 
 }
 
+#hero, #intro, #certificacoes, #produtos, #clientes, #contato {
+  scroll-margin-top: 50px;
+
+}
 
 .color1{
   background-color: var(--color1);
@@ -54,10 +58,15 @@ h2 {
 }
 
 
-.mais-vendidos {
+.mais-vendido {
   font-size: 0.7rem;
-  background-color: rgba(0, 255, 17, 0.25);
+  background-color: rgba(2, 106, 9, 0.75);
   margin-left: 2px;
+  text-transform: uppercase;
+  position: absolute; 
+  top: 10px; 
+  right: 5px; 
+  color: white;
 
 
 }
@@ -80,13 +89,14 @@ HERO
 }
 
 .bgHero {
-  background: rgba( 255, 255, 255, 0.25 );
+  background: rgba( 255, 255, 255, 0.15 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 10px );
   -webkit-backdrop-filter: blur( 10px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.1 );
   color: #fff;
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
 }
 
 
@@ -114,22 +124,6 @@ NAV
   color: var(--color2) !important;
 }
 
-  /* Add the 'active' class to highlight active links in the navbar */
-  .navbar-nav li.nav-item.active {
-    background-color: var(--active-link-background-color); /* Define the color for active links */
-    /* Add any additional styling for active links */
-  }
-
-  /* Add responsive styling for the navbar */
-  @media (max-width: 991px) {
-    .navbar-nav {
-      background-color: var(--color1);
-    }
-
-    .navbar-nav li.nav-item.active {
-      background-color: var(--color2);
-    }
-  }
 
 
 .fb {
@@ -265,23 +259,23 @@ BOTÕES
 /* Define your custom primary color */
 .btn-primary {
   color: #fff;
-  background-color: #3c63ae; /* Replace this with your desired color */
-  border-color: #3c63ae; /* Replace this with your desired color */
+  background-color: #3c63ae; 
+  border-color: #3c63ae; 
 }
 
 
 .btn-primary:hover{
-  background-color: #fff; /* You can define a different color for hover state if desired */
+  background-color: #fff; 
   color: #3c63ae;
 
 
 }
-.btn-primary:focus {
-  background-color: #fff; /* Replace this with your desired hover color */
-  border-color: #3c63ae; /* Replace this with your desired hover color */
+.btn-primary:active {
+  background-color: #fff; 
+  border-color: #3c63ae; 
   color: #3c63ae;
-
 }
+
 
 table .border-bottom{
   border-bottom: 1px solid #cb7f04 !important;
