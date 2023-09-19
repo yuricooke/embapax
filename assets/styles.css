@@ -203,7 +203,6 @@ NAV
   
 }
 
-
 .produto{
   position: relative;
   height: 50vh;
@@ -357,4 +356,8 @@ polygon {
 .accordion-button:focus {
   box-shadow: none;
   
+}
+
+footer a {
+  color: var(--color2);
 }
