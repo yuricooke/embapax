@@ -102,6 +102,18 @@ HERO
   background-size: cover;
 }
 
+
+.produto{
+  position: relative;
+  height: 50vh;
+  background-image: url(img/hero/exemplo.jpg);
+  background-attachment: fixed;
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 .bgHero {
   background: rgba( 255, 255, 255, 0.15 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -203,14 +215,6 @@ NAV
   
 }
 
-.produto{
-  position: relative;
-  height: 50vh;
-  background-color: var(--color3);
-  color: antiquewhite;
-  text-shadow: 0px 0px 15px #000;
-
-}
 
 .image_produto{
   opacity: 0.1;
@@ -360,4 +364,8 @@ polygon {
 
 footer a {
   color: var(--color2);
+}
+
+.modal-body h3{
+  margin-bottom: 20px;
 }
